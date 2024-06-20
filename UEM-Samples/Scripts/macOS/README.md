@@ -1,8 +1,9 @@
 # EUC-samples
 
 ## macOS-Samples \ Scripts
+<!-- Summary Start -->
 This section of the **EUC-samples** repository contains samples relating to macOS endpoint management via scripts.   Please feel free to submit any scripts you wish to share with the community!
-
+<!-- Summary End -->
 
 ## Submitting samples
 

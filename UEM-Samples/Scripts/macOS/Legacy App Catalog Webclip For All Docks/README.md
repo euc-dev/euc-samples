@@ -1,11 +1,13 @@
 # Set AirWatch App Catalog Webclip on All User Docks #
 
 ## Overview
-- **Author**: John Richards
-- **Email**: jrichards@vmware.com
-- **Date Created**: 4/27/2018
-- **Supported Platforms**: AirWatch version 8.4+
-- **Tested on macOS Versions**: macOS High Sierra
+<!-- Summary Start -->
+Author: John Richards
+Email: jrichards@vmware.com
+Date Created: 4/27/2018
+Supported Platforms: AirWatch version 8.4+
+Tested on macOS Versions: macOS High Sierra
+<!-- Summary End -->
 
 ## Problem / Use Case
 You can only deploy the (legacy) AirWatch App Catalog Webclip, via MDM, in the user context to the primary managed user. This means, in some organizations, that other local users on the device will not be able to access the App Catalog, unless they know the exact url.

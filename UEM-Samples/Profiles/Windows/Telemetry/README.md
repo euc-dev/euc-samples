@@ -5,14 +5,15 @@
 # Telemetry CSP
 
 ## Overview
-- **Author**: Mike Nelson
-- **Email**: miken@vmware.com
-- **Date Created**: 2/1/2018
-- **Supported Platforms**: Windows 10 Pro, Enterprise and Education
-- **Tested on Windows 10**: 1709
-
-## Purpose 
+<!-- Summary Start -->
 The [Telemetry CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) is used to set the level of telemetry data sent. 
+
+Author: Mike Nelson
+Email: miken@vmware.com
+Date Created: 2/1/2018
+Supported Platforms: Windows 10 Pro, Enterprise and Education
+Tested on Windows 10: 1709
+<!-- Summary End -->
 
 ## Details
 The [Telemetry CSP ](https://docs.microsoft.com/en-us/windows/client-management/mdm/policy-csp-system#system-allowtelemetry) allows customers to set the level of telemetry data sent.

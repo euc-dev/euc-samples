@@ -1,15 +1,16 @@
 # **Mobile apps CICD script**
 
 ## **Overview**
-* **Author(s)** : Manisha R, Nurul Quamar Khan
-* **Email** : manishar@vmware.com, khann@vmware.com
-* **Date Created** : 16 June 2019
-
-## **Purpose**
+<!-- Summary Start -->
 The tool provides an example of how the application deployment APIs of Workspace ONE UEM can be used for iOS and Android apps. This script can be used to automate application delivery to your end-user devices in the following cases:
 1. Add new apps with appropriate assignments
 2. Add new versions with appropriate assignments for existing apps
 3. Add new assignment groups to existing apps (*Note: This can be done only for apps that were added by executing this script*)
+
+Author(s): Manisha R, Nurul Quamar Khan
+Email: manishar@vmware.com, khann@vmware.com
+Date Created: 16 June 2019
+<!-- Summary End -->
 
 ## **Requirements**
 To execute the script, dependencies have to be installed.

@@ -1,20 +1,19 @@
 # Simplifying eSIM Cellular Plan Activation with Workspace ONE UEM
 
 ## Overview
-
-- **Authors**: Robert Terakedis, Christopher Burns
-- **Email**: rterakedis@vmware.com, burnsc@vmware.com
-- **Date Created**: 2020-08-28
-- **Supported Platforms**: Workspace ONE UEM 1908
-- **Tested on macOS Versions**: macOS High Sierra
-
-## Purpose
-
+<!-- Summary Start -->
 Cellular devices from Apple traditionally required a small, physical Subscriber Identity Module (SIM) card to enable service on a cellular carrier.  The SIM was typically pre-inserted by the carrier, but could be physically swapped if necessary.  Modern devices now include an eSIM, which is a chip built into the device that performs the same function but consumes less internal space.  eSIMs are also more flexible, as it supports any carrier supporting the eSIM standard and eliminates the need for physically touching/modifying the device.
 
-> **NOTE**:  The list of cellular providers is shown on [Apple's Cellular iPad page.](https://www.apple.com/ipad/cellular/)
+NOTE:  The list of cellular providers is shown on [Apple's Cellular iPad page.](https://www.apple.com/ipad/cellular/)
 
 This sample guidance provides details on how to bulk activate iPad Cellular Plans.
+
+Authors: Robert Terakedis, Christopher Burns
+Email: rterakedis@vmware.com, burnsc@vmware.com
+Date Created: 2020-08-28
+Supported Platforms: Workspace ONE UEM 1908
+Tested on macOS Versions: macOS High Sierra
+<!-- Summary End -->
 
 ## Table of Contents
 

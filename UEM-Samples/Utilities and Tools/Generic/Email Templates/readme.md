@@ -1,12 +1,13 @@
 # Workspace ONE Custom Email Templates
-
-* Author: Mathijs de Ruiter
-* Email: mathijs.de.ruiter@fondo.nl
-* Blog post: https://www.euctechtopics.com/custom-email-notifications-in-workspace-one-uem/
-* Date Created: 6/8/2020
-* Supported Platforms: WS1 UEM - All Versions
-
+<!-- Summary Start -->
 These email templates can be used as a starting point to create custom email notifications in Workspace ONE UEM. Where the basic ones provide the users with alot of information, it might be a better idea to incorporate your own company styling and languague. By doing this, the users will recognize and understand the emails. Whereas the default emails templates might come across as spam and/or phishing to some users. Included are templates for iOS Update Notifications and Compliancy Violations.
+
+Author: Mathijs de Ruiter
+Email: mathijs.de.ruiter@fondo.nl
+Blog post: https://www.euctechtopics.com/custom-email-notifications-in-workspace-one-uem/
+Date Created: 6/8/2020
+Supported Platforms: WS1 UEM - All Versions
+<!-- Summary End -->
 
 # Prerequisites
 

@@ -1,12 +1,14 @@
 # Expand-WV
 
+## Overview
+<!-- Summary Start -->
+Samples Scripts Using the VMware Horizon API via PowerCLI
+
 Version:        1.0  
 Author:         Chris Halstead - chalstead@vmware.com  
 Creation Date:  7/18/2019  
 Purpose/Change: Initial script development  
-
-## Overview
-Samples Scripts Using the VMware Horizon API via PowerCLI
+<!-- Summary End -->
 
 ## Usage
 

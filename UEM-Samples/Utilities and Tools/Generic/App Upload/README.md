@@ -1,15 +1,14 @@
 # App Upload
 
 ## Overview
-
-* Author: Mike Nelson
-* Email: miken@vmware.com
-* Date Created: 6/24/2021
-* Tested On: Workspace ONE UEM 21.11, 21.05, 21.02
-
-
-## Description
+<!-- Summary Start -->
 This script is a basic example of using uploadchunk apis to upload larger apps to the Workspace ONE UEM console.
+
+Author: Mike Nelson
+Email: miken@vmware.com
+Date Created: 6/24/2021
+Tested On: Workspace ONE UEM 21.11, 21.05, 21.02
+<!-- Summary End -->
 
 ## Requirements
 1. Powershell

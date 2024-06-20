@@ -1,9 +1,11 @@
 ## Block macOS Major Updates
 
-* Author Names:  Robert Terakedis & Matt Zaske
-* Date:  2022-07-18
-* Minimal/High-Level Description:    Custom XML Payload to block the macOS Installer using MDM and the Workspace ONE Intelligent Hub system extension. 
-* Tested Version:   Workspace ONE UEM 2204 + Hub 22.05
+<!-- Summary Start -->
+Author Names:  Robert Terakedis & Matt Zaske
+Date:  2022-07-18
+Minimal/High-Level Description:    Custom XML Payload to block the macOS Installer using MDM and the Workspace ONE Intelligent Hub system extension. 
+Tested Version:   Workspace ONE UEM 2204 + Hub 22.05
+<!-- Summary End -->
 
 ### UPDATE
 

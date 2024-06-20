@@ -1,14 +1,15 @@
 # Apple Enterprise Connect
 
 ## Overview
-- **Author**: Robert Terakedis
-- **Email**: rterakedis@vmware.com
-- **Date Created**: 6/8/2017
-- **Supported Platforms**: AirWatch version 9.0
-- **Tested on macOS Versions**: macOS El Capitan, macOS Sierra
-
-## Purpose 
+<!-- Summary Start -->
 The Apple Enterprise Connect file contains an XML snippet that can be used in a Custom XML payload to customize the configuration of Apple's Enterprise Connect software.   
+
+Author: Robert Terakedis
+Email: rterakedis@vmware.com
+Date Created: 6/8/2017
+Supported Platforms: AirWatch version 9.0
+Tested on macOS Versions: macOS El Capitan, macOS Sierra
+<!-- Summary End -->
 
 ## Required Changes/Updates
 You must replace the following items in the Custom XML before deploying it:

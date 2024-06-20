@@ -1,12 +1,7 @@
 # Import VMware Unified Access Gateway into Amazon Web Service and register as AMI (Amazon Image Machines)
 
 ## Overview
-- **Author**: Andreano Lanusse
-- **Email**: alanusse@vmware.com
-- **Date Created**: 11/04/2018
-- **Supported Platforms**: Unified Access Gateway 3.5 and above 
-
-## Purpose 
+<!-- Summary Start -->
 This script automated the process of making available the Unified Access Gateway vmdk image into Amazon Web Services as registered AMI in preparation for the EC2 instance creation.
 
 The following operations will be performed by the script:
@@ -17,6 +12,12 @@ The following operations will be performed by the script:
 - Register the Unified Access Gateway vmdk as Amazon Image Machine (AMI)
 
 After successfully execute the script, Unified Access Gateway will be available as private AMI on your Amazon Web Services console.
+
+Author:              Andreano Lanusse
+Email:               alanusse@vmware.com
+Date Created:        11/04/2018
+Supported Platforms: Unified Access Gateway 3.5 and above 
+<!-- Summary End -->
 
 ## Requirements
  

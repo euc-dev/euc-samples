@@ -1,14 +1,15 @@
 # Search for the VMware Unified Access Gateway Master Appliance
 
 ## Overview
-- **Author**: Andreano Lanusse
-- **Email**: alanusse@vmware.com
-- **Date Created**: 11/04/2018
-- **Supported Platforms**: Unified Access Gateway 3.4 and above 
-
-## Purpose 
+<!-- Summary Start -->
 This script search for the Master appliance in a given Unified Access Gateway Cluster,
 it leverage the Unified Access Gateway REST API to obtain the High Availability state of the appliance and identity the Master.
+
+Author:              Andreano Lanusse
+Email:               alanusse@vmware.com
+Date Created:        11/04/2018
+Supported Platforms: Unified Access Gateway 3.4 and above 
+<!-- Summary End -->
 
 ## Requirements
  

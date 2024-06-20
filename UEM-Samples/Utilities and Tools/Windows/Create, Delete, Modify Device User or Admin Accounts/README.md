@@ -8,12 +8,14 @@
 - **Tested on Windows 10**: 1703
 
 ## Purpose 
+<!-- Summary Start -->
 These sets of sample BATCH files will add and delete users and create and downgrade admins. 
 
 - **CreateAdmin.bat** - Creates a local admin on the device
 - **CreateUser.bat** - Creates a local user on the device
 - **DeleteUser.bat** - Deletes a local user or admin on the device
 - **DowngradeAdmin.bat** - Removes user/admin from a group e.g. administrators group
+<!-- Summary End -->
 
 ## Details
 For more information regarding using the Net User command please refer to the [Net User Reference](https://technet.microsoft.com/en-us/library/cc771865(v=ws.11).aspx). You can modify these scripts to support working with domain users by simply adding the **/domain** parameter. 

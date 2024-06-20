@@ -8,9 +8,11 @@
 - **Tested on**: Windows 10 Pro/Enterprise 1803+
 
 ## Purpose
+<!-- Summary Start -->
 The Migration script will help move a device between Workspace ONE UEM environments. 
 
 **Note:** This does require the device to unenroll from the source environment and to re-enroll into the new environment.
+<!-- Summary End -->
 
 ## Description 
 This script can be used to migrated existing devices to new environments. It does require an Enterprise Wipe in the Source environment so that enrollment can occur into the new environment.

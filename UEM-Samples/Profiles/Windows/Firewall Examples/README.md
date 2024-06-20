@@ -1,22 +1,21 @@
 # PRODUCTIZED in Workspace ONE UEM 1904 #
 
-----------
-
 # Firewall Samples
 
 ## Overview
-- **Author**: Mike Nelson & Brooks Peppin
-- **Email**: miken@vmware.com
-- **Date Created**: 11/14/2017
-- **Supported Platforms**: Windows 10 Desktop 1709 and above 
-- **Supported SKUs**: Pro, Business, Enterprise, Education
-- **Tested on**: Windows 10 1709 Enterprise
-
-## Purpose 
+<!-- Summary Start -->
 This folder has a sample configurations that will apply a firewall profile or custom firewall rules for an application or service on a Windows 10 Desktop for versions 1709 and above.
 The [Firewall CSP](https://docs.microsoft.com/en-us/windows/client-management/mdm/firewall-csp) was introduced in the 1709 update and only applies to the Windows 10 Desktop SKU.
 
 The Sample configuration creates a Firewall rule that allows an applications traffic to come inbound through the firewall. Outbound rules can be specified as well.
+
+Author: Mike Nelson & Brooks Peppin
+Email: miken@vmware.com
+Date Created: 11/14/2017
+Supported Platforms: Windows 10 Desktop 1709 and above 
+Supported SKUs: Pro, Business, Enterprise, Education
+Tested on: Windows 10 1709 Enterprise
+<!-- Summary End -->
 
 ## Required Changes/Updates
 Please update the `<Data> </Data>` tag with the right values for your firewall rule and application. Please see the CSP link provided for additional nodes and configurations.

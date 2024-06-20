@@ -1,26 +1,31 @@
 # **Workspace ONE ProductManagement-Samples**
 
 ## **Overview**
-* **Author(s)** : Krati Gupta, Madhushree Nayak M
-* **Email** : krgupta@vmware.com, mnayakm@vmware.com
-* **Date Created** : 06 March 2020
-
-## **Purpose**
+<!-- Summary Start -->
 The tool provides an example of how the product deployment APIs of Workspace ONE UEM can be used for Android app deployment. This script can be used to automate product delivery to your end-user devices in the following cases:
 1. Create product with app manifest and appropriate smartgroup assignments
 2. Update assignment for existing product
 
+Author(s): Krati Gupta, Madhushree Nayak M
+Email: krgupta@vmware.com, mnayakm@vmware.com
+Date Created: 06 March 2020
+<!-- Summary End -->
+
 ## **Requirements**
+
 To execute the script, dependencies have to be installed.
 This tool uses Python's PIP installation system.
 Dependencies can be installed by executing the following command:
 ` pip install -r requirements.txt `
 
 ## **How to execute the script**
+
 config.py file has to be updated with appropriate values before executing the script. This file has settings like the environment URL, WS1 tenant, smart group, etc.
 
 ### **Command to execute the script**
+
 #### 1. Adding a new product
+
 ` python deployment.py <options> <File Path> <Build Information> <Deployment Type> <Deactivate Old Product>`
 
 Product Deployment workflow needs the following required parameters:
@@ -47,6 +52,7 @@ This is being used in the script to decide what state the product deployment is 
 Example: {"new": {"45": {"app_id": 483, "app_name": "demo", "product_id": 0, "product_name": "Apps_demo_v1.0.0", "app_version": "1.0.0", "current_deployment": "Prod", "organization_group":"7", "bundle_id": "com.one97.hero"}}
 
 #### 2. Updating assignments for an existing product
+
 `` python deployment.py <options> <File Path> <Build Information> <Deployment Type> <Deactivate Old Product>``
 
 Updating assignments can only be performed for the products which have been created and uploaded using the same script.
@@ -71,8 +77,8 @@ options - Two options are available.
 
 If product name is given in parameters, it has to be same as it was given when the product was created.
 
-
 ## **Integrating with Jenkins**
+
 jenkins_build_information.py is a python script that has been written to fetch jenkins build information.
 
 This script can be integrated with jenkins as follows:
@@ -83,6 +89,7 @@ This script can be integrated with jenkins as follows:
 4. Provide the absolute path of jenkins_build_information.py for Build Information argument.
 
 ## **Integrating the Script with a Build Server**
+
 The script can be integrated with any build server as follows:
 1. To integrate the script, fill in the Build server details in config.py
 2. Write a Python script to call an appropriate Build Server API to get the build information.
@@ -90,9 +97,11 @@ The script can be integrated with any build server as follows:
 4. Provide the absolute file path of the Build Server API client written in place of <Build Information> argument.
 
 ## **Testing**
+
 End to End test cases have been added under the folder 'testing'. Please refer ReadMe file under testing folder for more details on how to run the test cases.
 
 ## **EndPoints Used**
+
 1. BLOB_UPLOAD_URL = '/api/mam/apps/blobs/uploadblob'
 2. APP_UPLOAD_URL = '/api/mam/apps/internal/begininstall'
 3. APPLICATION_SEARCH_URL = '/API/v1/mam/apps/search'

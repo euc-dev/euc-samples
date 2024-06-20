@@ -5,13 +5,7 @@
 # Unified Write Filter CSP
 
 ## Overview
-- **Author**: Varun Murthy
-- **Email**: vmurthy@vmware.com
-- **Date Created**: 7/23/2017
-- **Supported Platforms**: Windows 10 Enterprise, Education ONLY
-- **Tested on Windows 10**: 1607, 1703
-
-## Purpose 
+<!-- Summary Start -->
 The Unified Write Filter feature is a powerful feature on Windows which is designed to protect the drives on a system by reducing the number of write cycles that the drive goes through during use.
 
 It does this by creating a drive Overlay in memory where all changes to the system are written to memory. At the end of the session the changes can be written to memory or discarded.
@@ -22,6 +16,13 @@ Common use cases are
 - Discard all changes after a session on a physical device after each reboot and restore it to a known working state.
 	
 The sample exclusions are based on the best practices to prevent Windows Defender changes from reinstalling on each reboot.
+
+Author: Varun Murthy
+Email: vmurthy@vmware.com
+Date Created: 7/23/2017
+Supported Platforms: Windows 10 Enterprise, Education ONLY
+Tested on Windows 10: 1607, 1703
+<!-- Summary End -->
 
 ## Required Changes/Updates
 Enable the Unified Write Filter on the device using the following powershell command or go to the "Turn Windows Features On or Off" section on the Add Remove Programs > Device Lockdown menu and enable the Unified Write Filter feature under 

@@ -1,6 +1,8 @@
 # dockutil Post-Install Script for MacOS Internal Apps
 
+<!-- Summary Start -->
 There are times where it would be useful to add icons to the user's dock after installing a new application.   The following script can be added as a post-install script in order to call an open source utility script (dockutil) to add the item as desired.
+<!-- Summary End -->
 
 ## dockutil Post-Install Script
 

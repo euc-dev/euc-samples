@@ -1,19 +1,19 @@
 # Chrome ADMX
 
 ## Overview
-- **Author**: Josue Negron
-- **Email**: jnegron@vmware.com
-- **Date Created**: 12/1/2017
-- **Date Updated**: 8/7/2019, rmyklebust@vmware.com
-- **Tested on**: Windows 10 Enterprise 1709, Windows 10 PRO 1809
-
-        
-## Description
+<!-- Summary Start -->
 ADMX-backed policies were introduced starting in Windows 10 version 1703, however you should stick to the latest version in order to have support for all of the policies. Microsoft allowed ADMX-backed policies to be deployed using CSPs, this sample will show you how to deploy the Chrome ADMX template (easily be modified to support any other ADMX template). As well as push out ADMX-backed Chrome policies to the device once the ADMX template is installed. Please reference the resources below to figure out what value (format) needs to go inside of the data tag. This varies depending on the element type such as: text, List, Enum, MultiText, No Elements, etc. 
 
 You can deploy these Chrome CSPs samples via Workspace ONE UEM. To deploy navigate to **Devices & User > Profile > Add > Windows > Desktop > Device > Custom Settings**, then copy and paste the SyncML into the install / unistall box and publish the profile.
 
 These are all ADMX-backed policies and require special SyncML format to enable or disable. For details, see [Understanding ADMX-backed policies](https://docs.microsoft.com/en-us/windows/client-management/mdm/understanding-admx-backed-policies).
+
+Author: Josue Negron
+Email: jnegron@vmware.com
+Date Created: 12/1/2017
+Date Updated: 8/7/2019, rmyklebust@vmware.com
+Tested on: Windows 10 Enterprise 1709, Windows 10 PRO 1809
+<!-- Summary End -->
 
 ## Background
 In addition to standard policies, the Policy CSP can now also handle ADMX-backed policies. In an ADMX-backed policy, an administrative template contains the metadata of a Window Group Policy and can be edited in the Local Group Policy Editor on a PC. Each administrative template specifies the registry keys (and their values) that are associated with a Group Policy and defines the policy settings that can be managed. Administrative templates organize Group Policies in a hierarchy in which each segment in the hierarchical path is defined as a category. Each setting in a Group Policy administrative template corresponds to a specific registry value. These Group Policy settings are defined in a standards-based, XML file format known as an ADMX file. For more information, see [Group Policy ADMX Syntax Reference Guide](https://technet.microsoft.com/en-us/library/cc753471(v=ws.10).aspx).

@@ -1,8 +1,10 @@
 # Add Active Directory Schema Extensions to Azure AD Connect
 
+<!-- Summary Start -->
 Azure AD Connect allows to extend the schema in Microsoft Azure AD with attributes from on-premise Active Directory. Not all Active Directory attributes are accessible in Directory Extensions wizard.
 
 Provided scrips allow to manually add directory extensions to Azure AD and Azure AD Connect connector schema.
+<!-- Summary End -->
 
 ## How to use
 
@@ -11,7 +13,6 @@ Provided scrips allow to manually add directory extensions to Azure AD and Azure
 * open the "Synchronization Service Manager", and then "Connectors" tab,
 * right-click on Azure AD connector, select "Properties", switch to the "Select attributes" tab, check "Show all" box, find added attribute, select it and save,
 * attribute can be used in Synchronisation Rules Editor.
-
 
 `Delete-Extension-Property-From-Azure-AD.ps1` and `Delete-Attribute-From-Azure-Connector-Schema.ps1` scripts can be used to rollback changes.
 

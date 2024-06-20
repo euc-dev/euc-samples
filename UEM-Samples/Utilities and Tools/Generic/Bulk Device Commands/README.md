@@ -1,13 +1,14 @@
 # Bulk Command Script
 
 ## Overview
-- **Author**: Mike Nelson
-- **Email**: miken@vmware.com
-- **Date Created**: 02/05/2019
-- **Tested on Workspace One UEM 1811**: Completed
-
-## SYNOPSIS
+<!-- Summary Start -->
 This Powershell script allows you to issue commands to groups of devices in bulk that are available via API but not currently in the console. Commands such as Device Lock or Enterprise Reset can be issued against a targeted group of devices to speed up Admin tasks. 
+
+Author: Mike Nelson
+Email: miken@vmware.com
+Date Created: 02/05/2019
+Tested on Workspace One UEM 1811: Completed
+<!-- Summary End -->
 
 **Requirements**
 

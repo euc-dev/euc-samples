@@ -1,8 +1,10 @@
 # UEM Managed Goldmaster Scripts
 
+<!-- Summary Start -->
 This powershell script allows you to easily use Workspace ONE Unified Endpoint Management (UEM) to bring a Gold Master image up the required state.
 
 The install_syncml.xml and remove_syncml.xml files are custom CSPs for setting the Windows Update settings. Place these in a profile in UEM, and modify the target version as needed.
+<!-- Summary End -->
 
 ## Requirements
  - A Workspace ONE UEM Admin Account that can use basic auth to authenticate into the APIs.

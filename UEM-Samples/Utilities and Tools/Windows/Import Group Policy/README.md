@@ -9,7 +9,9 @@
 - **Tested on Windows 10**: 1703 Enterprise
 
 ## Purpose 
+<!-- Summary Start -->
 This set of scripts will guide you on how to export and import group policy configurations from devices into AirWatch to push out to managed devices using AirWatch's Product Provisioning.
+<!-- Summary End -->
 
 ## Change Log
 - 7/11/2017: Initial upload of Import Group Policy

@@ -1,15 +1,7 @@
 # macOS Baselines
 
 ## Overview
-
-- **Authors**: Matt Zaske
-- **Email**: mzaske@vmware.com
-- **Date Created**: 6/29/2022
-- **Supported Platforms**: Workspace ONE UEM v2204
-- **Tested on macOS Versions**: macOS Big Sur
-
-## Purpose
-
+<!-- Summary Start -->
 Utilizing the macOS Security Compliance Project (mSCP) to enforce baselines on macOS devices using Workspace ONE. We will review briefly how to use the mSCP to generate the desired baseline and then detail the procedure to deploy this configuration using Workspace ONE. We will close by reviewing deployment options for Freestyle-enabled and non-Freestyle-enabled environments. Here is a high level overview:
 
 1. [Prerequisites for mSCP](#prerequisites-for-mSCP)
@@ -23,6 +15,13 @@ Utilizing the macOS Security Compliance Project (mSCP) to enforce baselines on m
         1. [Using Freestyle Orchestrator](#remediation-with-freestyle-orchestrator)
         2. [Using other methods](#remediation-without-freestyle-orchestrator)
 5. [Reporting](#reporting)
+
+Authors: Matt Zaske
+Email: mzaske@vmware.com
+Date Created: 6/29/2022
+Supported Platforms: Workspace ONE UEM v2204
+Tested on macOS Versions: macOS Big Sur
+<!-- Summary End -->
 
 ## Prerequisites for mSCP
 

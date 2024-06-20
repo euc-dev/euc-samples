@@ -1,21 +1,22 @@
 # macOS Updater Utility (mUU)
+
 <p align="center">
     <img width="500" alt="image" src="https://github.com/mzaske3/euc-samples/assets/63124926/1466c174-21d5-4fc0-8a28-2f1fd52ddcde">
 </p>
+
 ## Overview
+<!-- Summary Start -->
+The macOS Updater Utility (mUU) keeps your Mac device fleet up to date by prompting users to update to your specified version of macOS. If necessary, mUU will force users to update their OS. mUU utilizes [Apple's MDM Commands](https://developer.apple.com/documentation/devicemanagement/scheduleosupdatecommand/command/updatesitem) to download and install updates via the Workspace ONE UEM API. mUU will allow you to specify max number of deferrals, deferral grace period, and more! Read more to find out how to deploy this solution using Workspace ONE UEM. 
 
-
-- **Authors**: Matt Zaske, Leon Letto, and others
-- **Email**: mzaske@vmware.com
-- **Date Created**: 7/22/2022
-- **Supported Platforms**:
+Authors: Matt Zaske, Leon Letto, and others
+Email: mzaske@vmware.com
+Date Created: 7/22/2022
+Supported Platforms:
     - VMware Workspace ONE UEM (22.10+) with Freestyle Workflow Engine (Scripts engine required)
     - VMware Workspace ONE Intelligent Hub for macOS (22.12+)
-- **Tested on macOS Versions**: macOS 11+ (Intel and Apple Silicon CPU)
+Tested on macOS Versions: macOS 11+ (Intel and Apple Silicon CPU)
+<!-- Summary End -->
 
-## Purpose
-
-The macOS Updater Utility (mUU) keeps your Mac device fleet up to date by prompting users to update to your specified version of macOS. If necessary, mUU will force users to update their OS. mUU utilizes [Apple's MDM Commands](https://developer.apple.com/documentation/devicemanagement/scheduleosupdatecommand/command/updatesitem) to download and install updates via the Workspace ONE UEM API. mUU will allow you to specify max number of deferrals, deferral grace period, and more! Read more to find out how to deploy this solution using Workspace ONE UEM. 
 <p align="center">
     <img width="532" alt="image" src="https://user-images.githubusercontent.com/63124926/181076575-23266933-bff4-46fd-adf9-ab332054f994.png">
 </p>

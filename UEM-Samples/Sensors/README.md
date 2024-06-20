@@ -1,12 +1,16 @@
 # Workspace ONE Sensors
 
 ## Overview
-- **Authors**:Bhavya Bandi, Varun Murthy, Josue Negron, Brooks Peppin, Aaron Black, Mike Nelson, Chris Halstead, Justin Sheets, Andreano Lanusse, Adarsh Kesari, Saurabh Jhunjhunwala, Robert Terakedis, Phil Helmling
-- **Email**: bbandi@vmware.com, vmurthy@vmware.com, jnegron@vmware.com, bpeppin@vmware.com, aaronb@vmware.com, miken@vmware.com, chalstead@vmware.com, jsheets@vmware.com, aguedesrocha@vmware.com, kesaria@vmware.com, sjhunjhunwal@vmware.com, rterakedis@vmware.com, helmlingp@vmware.com
-- **Date Created**: 11/14/2018
-- **Updated**: 05/14/2024
-- **Supported Platforms**: Workspace ONE 1811+
-- **Tested on**: Windows 10 Pro/Enterprise 1803+
+<!-- Summary Start -->
+These Workspace ONE Sensor samples contain PowerShell, BASH and Shell scripts that can be used in a **Resources > Sensors** payload to report back information about the Windows, macOS or Linux device back to Workspace ONE.
+
+Authors: Bhavya Bandi, Varun Murthy, Josue Negron, Brooks Peppin, Aaron Black, Mike Nelson, Chris Halstead, Justin Sheets, Andreano Lanusse, Adarsh Kesari, Saurabh Jhunjhunwala, Robert Terakedis, Phil Helmling
+Email: bbandi@vmware.com, vmurthy@vmware.com, jnegron@vmware.com, bpeppin@vmware.com, aaronb@vmware.com, miken@vmware.com, chalstead@vmware.com, jsheets@vmware.com, aguedesrocha@vmware.com, kesaria@vmware.com, sjhunjhunwal@vmware.com, rterakedis@vmware.com, helmlingp@vmware.com
+Date Created: 11/14/2018
+Updated: 05/14/2024
+Supported Platforms: Workspace ONE 1811+
+Tested on: Windows 10 Pro/Enterprise 1803+
+<!-- Summary End -->
 
 ## DISCLAIMER
    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
@@ -15,9 +19,6 @@
    VMWARE,INC. BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
    IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
    CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-## Purpose
-These Workspace ONE Sensor samples contain PowerShell, BASH and Shell scripts that can be used in a **Resources > Sensors** payload to report back information about the Windows, macOS or Linux device back to Workspace ONE.
 
 ## Description 
 There are Sensor samples, templates, and a script `import_sensor_samples.ps1` to populate your environment with all of the samples.
@@ -79,7 +80,7 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
 
 ### Examples 
 
-- **Basic**: this command shows all required fields and will scan the current directory and upload the samples to Workspace ONE UEM Console via the REST API using the credentials provided. ***The OrganizationGroupName parameter uses a search function. If multiple Organization Groups are returned, a choice prompt will allow selection of the correct Origanization Group.***
+Basic: this command shows all required fields and will scan the current directory and upload the samples to Workspace ONE UEM Console via the REST API using the credentials provided. ***The OrganizationGroupName parameter uses a search function. If multiple Organization Groups are returned, a choice prompt will allow selection of the correct Origanization Group.***
 
    ```
    .\import_sensor_samples.ps1
@@ -90,7 +91,7 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
       -OrganizationGroupName 'Digital Workspace Tech Zone'
    ```
 
-- **Custom Directory**: using the `-SensorsDirectory` parameter tells the script where your samples exist. The directory provided must have script files which you want uploaded as Sensors. 
+Custom Directory: using the `-SensorsDirectory` parameter tells the script where your samples exist. The directory provided must have script files which you want uploaded as Sensors. 
 
    ```
    .\import_sensor_samples.ps1
@@ -102,7 +103,7 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
       -SensorsDirectory 'C:\Users\G.P.Burdell\Downloads\Sensors'
    ```
 
-- **Assign to Smart Group**: using the `-SmartGroupID` OR `-SmartGroupName` parameter will assign all Sensors imported or updated to that chosen Smart Group. This command is used best in a test environment to quickly test Sensors before moving Sensors to production, however it is also a great way to add assignments to many sensors. Obtain the Smart Group ID via API or by hovering over the Smart Group name in the console and looking at the ID at the end of the URL to use `-SmartGroupID`. ***The SmartGroupName parameter uses a search function. If multiple Smart Groups are returned, a choice prompt will allow selection of the correct Smart Group.***
+Assign to Smart Group: using the `-SmartGroupID` OR `-SmartGroupName` parameter will assign all Sensors imported or updated to that chosen Smart Group. This command is used best in a test environment to quickly test Sensors before moving Sensors to production, however it is also a great way to add assignments to many sensors. Obtain the Smart Group ID via API or by hovering over the Smart Group name in the console and looking at the ID at the end of the URL to use `-SmartGroupID`. ***The SmartGroupName parameter uses a search function. If multiple Smart Groups are returned, a choice prompt will allow selection of the correct Smart Group.***
 
    ```
    .\import_sensor_samples.ps1
@@ -114,7 +115,7 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
       -SmartGroupName 'All Devices'
    ```
 
-- **Assign to Smart Group and Set EVENT Triggers**: using the `-TriggerType` you can choose to trigger on `EVENT` or `SCHEDULE`. When using **EVENT** as a TriggerType provide the trigger(s): **LOGIN**, **LOGOUT**, **STARTUP**, **USER_SWITCH**. When using **SCHEDULE** or if not specifying a TriggerType, then the default Sensor interval of 6 hours will be used, and the Event triggers will be ignored.
+Assign to Smart Group and Set EVENT Triggers: using the `-TriggerType` you can choose to trigger on `EVENT` or `SCHEDULE`. When using **EVENT** as a TriggerType provide the trigger(s): **LOGIN**, **LOGOUT**, **STARTUP**, **USER_SWITCH**. When using **SCHEDULE** or if not specifying a TriggerType, then the default Sensor interval of 6 hours will be used, and the Event triggers will be ignored.
 
    ```
    .\import_sensor_samples.ps1
@@ -128,7 +129,7 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
       -LOGIN -LOGOUT -STARTUP -USER_SWITCH
    ```
 
-- **Delete All Sensors**: using the `-DeleteSensors` switch parameter will delete ALL Sensors in the target Organization Group, including Sensors manually added! This is destructive and not reversible.
+Delete All Sensors: using the `-DeleteSensors` switch parameter will delete ALL Sensors in the target Organization Group, including Sensors manually added! This is destructive and not reversible.
 
    ```
    .\import_sensor_samples.ps1
@@ -140,7 +141,7 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
       -DeleteSensors
    ```
 
-- **Update Sensors or Overwrite Existing Sensors**: using the `-UpdateSensors` switch parameter will update the Sensors that already exist with the version being uploaded. This is best used when updates and fixes are published to the source Sensor samples.
+Update Sensors or Overwrite Existing Sensors: using the `-UpdateSensors` switch parameter will update the Sensors that already exist with the version being uploaded. This is best used when updates and fixes are published to the source Sensor samples.
 
    ```
    .\import_sensor_samples.ps1
@@ -152,7 +153,7 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
       -UpdateSensors
    ```
 
-- **Export All Sensors**: using the `-ExportSensors` switch parameter will export ALL Sensors that exist in the target Organization Group, including Sensors manually added! This is a good option for backing up sensors before making updates, or copying from UAT to PROD for example.
+Export All Sensors: using the `-ExportSensors` switch parameter will export ALL Sensors that exist in the target Organization Group, including Sensors manually added! This is a good option for backing up sensors before making updates, or copying from UAT to PROD for example.
 
    ```
    .\import_sensor_samples.ps1
@@ -165,29 +166,29 @@ The `import_sensor_samples.ps1` script must be run as an Administrator user on a
    ```
 
 ### Parameters 
-**-WorkspaceONEServer**: REST API URL for the Workspace ONE UEM API Server e.g. https://as###.awmdm.com without the ending /API. Navigate to **All Settings -> System -> Advanced -> API -> REST API**.
+orkspaceONEServer: REST API URL for the Workspace ONE UEM API Server e.g. https://as###.awmdm.com without the ending /API. Navigate to **All Settings -> System -> Advanced -> API -> REST API**.
 
-**-WorkspaceONEAdmin**: An Workspace ONE UEM admin account in the tenant that is being queried.  This admin must have the API role at a minimum.
+orkspaceONEAdmin: An Workspace ONE UEM admin account in the tenant that is being queried.  This admin must have the API role at a minimum.
 
-**-WorkspaceONEAdminPW**: The password that is used by the admin specified in the admin parameter
+orkspaceONEAdminPW: The password that is used by the admin specified in the admin parameter
 
-**-WorkspaceONEAPIKey**: This is the REST API key that is generated in the Workspace ONE UEM Console.  You locate this key at **All Settings -> System -> Advanced -> API -> REST API**,
+orkspaceONEAPIKey: This is the REST API key that is generated in the Workspace ONE UEM Console.  You locate this key at **All Settings -> System -> Advanced -> API -> REST API**,
 and you will find the key in the **API Key** field.  If it is not there you may need override the settings and Enable API Access. 
 ![](https://i.imgur.com/CjiC2Qt.png)
 
-**-OrganizationGroupName**: (OPTIONAL) The display name of the Organization Group. You can find this at the top of the console, normally your company's name. This parameter uses a function to search the tenant for the OrganizationGroupName. If multiple Organization Groups are returned, a choice prompt will allow selection of the correct Organization Group. **Required to provide OrganizationGroupName or OrganizationGroupID.** 
+rganizationGroupName: (OPTIONAL) The display name of the Organization Group. You can find this at the top of the console, normally your company's name. This parameter uses a function to search the tenant for the OrganizationGroupName. If multiple Organization Groups are returned, a choice prompt will allow selection of the correct Organization Group. **Required to provide OrganizationGroupName or OrganizationGroupID.** 
 
-**-OrganizationGroupID**: (OPTIONAL) The Group ID of the Organization Group. You can find this by hovering over your Organization's Name in the console. **Required to provide OrganizationGroupName or OrganizationGroupID.**
+rganizationGroupID: (OPTIONAL) The Group ID of the Organization Group. You can find this by hovering over your Organization's Name in the console. **Required to provide OrganizationGroupName or OrganizationGroupID.**
 ![](https://i.imgur.com/lWjWBsF.png)
 
-**-SensorsDirectory**: (OPTIONAL) The directory your sensors samples are located, default location is the current directory this PowerShell script is running from. 
+ensorsDirectory: (OPTIONAL) The directory your sensors samples are located, default location is the current directory this PowerShell script is running from. 
 
-**-SmartGroupName**: (OPTIONAL) If provided, sensors imported will be assigned to this Smart Group. Existing assignments will NOT be overwritten, only added to. Navigate to **Groups & Settings > Groups > Assignment Groups**. The Smart Group Name is the friendly name displayed in the Groups column. The script will default to using Managed By = Organization Group used above. This option can also be used to assign many sensors quickly. **If wanting to assign, you are required to provide SmartGroupID or SmartGroupName.**
+martGroupName: (OPTIONAL) If provided, sensors imported will be assigned to this Smart Group. Existing assignments will NOT be overwritten, only added to. Navigate to **Groups & Settings > Groups > Assignment Groups**. The Smart Group Name is the friendly name displayed in the Groups column. The script will default to using Managed By = Organization Group used above. This option can also be used to assign many sensors quickly. **If wanting to assign, you are required to provide SmartGroupID or SmartGroupName.**
 
-**-SmartGroupID**: (OPTIONAL) If provided, sensors imported will be assigned to this Smart Group. Existing assignments will NOT be overwritten, only added to. Navigate to **Groups & Settings > Groups > Assignment Groups**. Hover over the Smart Group, then look for the number at the end of the URL, this is your Smart Group ID. This option can also be used to assign many sensors quickly. **If wanting to assign, you are required to provide SmartGroupID or SmartGroupName.**
+martGroupID: (OPTIONAL) If provided, sensors imported will be assigned to this Smart Group. Existing assignments will NOT be overwritten, only added to. Navigate to **Groups & Settings > Groups > Assignment Groups**. Hover over the Smart Group, then look for the number at the end of the URL, this is your Smart Group ID. This option can also be used to assign many sensors quickly. **If wanting to assign, you are required to provide SmartGroupID or SmartGroupName.**
 ![](https://i.imgur.com/IjvkoGC.png)
 
-**-DeleteSensors**: (OPTIONAL) If enabled, all sensors in your environment will be deleted. This action is destructive and cannot be undone. Ensure you are targeting the correct Organization Group. 
+eleteSensors: (OPTIONAL) If enabled, all sensors in your environment will be deleted. This action is destructive and cannot be undone. Ensure you are targeting the correct Organization Group. 
 
 **-UpdateSensors** (OPTIONAL) If enabled, sensors imported that match an existing sensor by name in the specified Organization Group Name, will have the Description, Platform Architecture, Return Type and Sensor Code updated in the console. When combined with `-SmartGroupName` or `-SmartGroupID`, these Sensors will also be assigned to the specified Smart Group if not already assigned.
 

@@ -1,12 +1,7 @@
 # Automating rotation of keytab on Unified Access Gateway for Identity Bridging Use Cases
 
 ## Overview
-- **Author**: Andreano Lanusse
-- **Email**: alanusse@vmware.com
-- **Date Created**: 10/14/2019
-- **Supported Platforms**: Unified Access Gateway 3.7 and above 
-
-## Purpose 
+<!-- Summary Start -->
 This script automated the process of rotating keytab files on Unified Access Gateway, including create new keytabs and update related IIS configurations.
 
 The script will perform the following operations:
@@ -16,6 +11,12 @@ The script will perform the following operations:
 - Reset IIS
 
 After successfully execute the script, the Web Reverse Proxy instances configured on Unified Access Gateway and associated with the keytab SPN will restart to establish a new connection with the KDC based on the new keytab, after that the internal web applications will be available to the external users.
+
+Author:              Andreano Lanusse
+Email:               alanusse@vmware.com
+Date Created:        10/14/2019
+Supported Platforms: Unified Access Gateway 3.7 and above 
+<!-- Summary End -->
 
 ## Requirements
  

@@ -1,13 +1,16 @@
 # Profiles for CIS Benchmark 
-https://www.cisecurity.org/cis-benchmarks/
+
 
 ## Overview
+<!-- Summary Start -->
+https://www.cisecurity.org/cis-benchmarks/
 
-- **Authors**: Matt Zaske
-- **Email**: mzaske@vmware.com
-- **Date Created**: 6/9/2022
-- **Supported Platforms**: Workspace ONE UEM v2203
-- **Tested on macOS Versions**: macOS Big Sur
+Authors: Matt Zaske
+Email: mzaske@vmware.com
+Date Created: 6/9/2022
+Supported Platforms: Workspace ONE UEM v2203
+Tested on macOS Versions: macOS Big Sur
+<!-- Summary End -->
 
 ## Custom Profile Detail
 

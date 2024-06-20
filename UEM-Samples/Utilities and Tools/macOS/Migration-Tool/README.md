@@ -1,10 +1,12 @@
 # Migrate macOS Devices to Workspace ONE UEM
 
+<!-- Summary Start -->
 This is an updated version of the previous generation of the tool which can be found [here]().
 
 This tool is designed to be flexible to fit different use cases. There is no default mode, so you must understand how the tool works in order to configure it for your needs.
 
 This tool is designed to work with DEPNotify for an easy-to-configure UI. Understanding the many capabilities of DEPNotify and how to configure it is highly recommended to create a great migration experience.
+<!-- Summary End -->
 
 -------------------------------------------------------------------
 

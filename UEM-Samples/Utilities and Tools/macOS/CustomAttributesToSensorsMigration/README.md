@@ -1,16 +1,18 @@
 # Custom Attributes to Sensors Migrator
 
 ### Overview
-* Author: Paul Evans, Mike Nelson
-* Email: pevans@vmware.com, miken@vmware.com
-* Date Created: 11/11/2020
-* Supported Platforms: WS1 UEM 20.11+
-
+<!-- Summary Start -->
 This script can be used to migrate existing Custom Attributes profiles that are configured in a Workspace ONE UEM environment to a Sensor configured in the same environment.  The script works in two parts:
 
 1) First, you will download the metadata of your existing Custom Attributes profiles, including the assignments, which will be saved in the ./SensorData folder as individual .json files
 
 2) Once the metadata has been downloaded and verified, you will use this data to create Sensor resources.  The original Custom Attributes profiles in the environment will not be affected.
+
+Author: Paul Evans, Mike Nelson
+Email: pevans@vmware.com, miken@vmware.com
+Date Created: 11/11/2020
+Supported Platforms: WS1 UEM 20.11+
+<!-- Summary End -->
 
 ### Setup
 

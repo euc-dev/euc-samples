@@ -1,21 +1,22 @@
 # Windows Update for Business Ring Sample
 
 ## Overview
-- **Author**: Brooks Peppin
-- **Updated By**: helmlingp@vmware.com
-- **Date Created**: 8/25/2020
-- **Date updated**: 8/16/2022
-- **Supported Platforms**: Windows 10 Desktop 1803 and above 
-- **Supported SKUs**: Home, Pro, Enterprise, Education
-- **Tested on**: Windows 10 1809 Enterprise and higher
-
-## Purpose 
+<!-- Summary Start -->
 These sample configuration files are to be used together, deploying one Quality Update (QU) Ring profile, one Feature Update (FU) Ring profile and one Delivery Optimization profile. Combined, these profiles control Windows 10/11 Update settings as referenced below with the following design principles
 1. Auto-Approved Updates
 2. Deferrals to control deployment and risk
 3. Delivery Optimization to control/improve download usage
 4. Rapid device compliance
 5. The best user experience
+
+Author: Brooks Peppin
+Updated By: helmlingp@vmware.com
+Date Created: 8/25/2020
+Date updated: 8/16/2022
+Supported Platforms: Windows 10 Desktop 1803 and above 
+Supported SKUs: Home, Pro, Enterprise, Education
+Tested on: Windows 10 1809 Enterprise and higher
+<!-- Summary End -->
 
 ## Controlling Feature Update & OS Version
 TargetReleaseVersion policy in the FU Ring policy should be used to keep your devices locked to a specific Feature Upgrade version. This means that you are no longer "approving" or "deferring" the feature upgrade. It simply will go to (or stay on) the value that is in the profile. ProductVersion in the FU Ring policy should be used to keep your devices locked to a specific OS Version. For example, locked to Windows 10 or forced upgrade to Windows 11.

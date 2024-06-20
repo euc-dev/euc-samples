@@ -8,9 +8,11 @@
 - **Tested on**: Various Windows 10 1607-1709
 
 ## SYNOPSIS
+<!-- Summary Start -->
 A running list of validated apps (Win32) deployed using Software Distribution in the AirWatch console. We will update this list weekly with new entries. If you would like to have an app added please send [jnegron@vmware.com](mailto:jnegron@vmware.com) all of the app's information, it will be validated then added. 
 
 Navigate to **Apps & Books > Native > Internal > Add Application**, then follow the values to enter from the attached templates. 
+<!-- Summary End -->
         
 ## DESCRIPTION
 VMware Workspace ONE, powered by VMware AirWatch unified endpoint management allows you to quickly package and deploy even the most complex set of applications all from the AirWatch console providing end users with automatic installation of business critical apps or allowing them to install on-demand apps from the Workspace ONE unified catalog. 

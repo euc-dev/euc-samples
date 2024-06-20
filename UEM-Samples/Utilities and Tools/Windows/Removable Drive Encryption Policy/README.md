@@ -8,7 +8,9 @@
 - **Tested on Windows 10**: 1507, 1511, 1607, 1703
 
 ## Purpose 
+<!-- Summary Start -->
 This script disables writes to removable drives on a Windows 10 Desktop.
+<!-- Summary End -->
 
 ## Required Changes/Updates
 You can add other GPO policy values for Volume Encryption by looking up the registry path below.
